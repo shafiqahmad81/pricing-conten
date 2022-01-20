@@ -1,0 +1,244 @@
+/*==============================================================================                                  comon css style
+=============================================================================*/
+
+@font-face {
+	font-family: "Font Awesome 5 Brands";
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url(../webfonts/fa-brands-400.eot);
+	src: url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.woff) format("woff"), url(../webfonts/fa-brands-400.ttf) format("truetype"), url(../webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url(../webfonts/fa-regular-400.eot);
+	src: url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-regular-400.woff2) format("woff2"), url(../webfonts/fa-regular-400.woff) format("woff"), url(../webfonts/fa-regular-400.ttf) format("truetype"), url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url(../webfonts/fa-solid-900.eot);
+	src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+a:focus {
+	outline: 0 solid;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 15px;
+	font-weight: 700;
+	color: #333;
+}
+
+html,
+body {
+	height: 100%;
+	color: #70706F;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+/* start css */
+
+.section-tittle {
+	text-align: center;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+
+}
+
+.section-tittle h2:before {
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	background-color: #FFCE44;
+	content: "";
+	left: 50%;
+	bottom: 0;
+	margin-left: -50px;
+}
+
+.section-tittle h2:after {
+	position: absolute;
+	width: 33.33px;
+	height: 5px;
+	background-color: red;
+	content: "";
+	right: 50%;
+	bottom: 0;
+	margin-right: -16px;
+}
+
+section.section-padding {
+	padding: 50px 0;
+}
+
+.section-tittle span {
+	color: #25945C;
+}
+
+.single-pricing-box {
+	border: 1px solid #ddd;
+	padding: 20px;
+	text-align: center;
+}
+
+.single-pricing-box h3 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.pricing-icon {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.pricing-icon img {
+	max-width: 100%;
+}
+
+.pricing-list {
+	text-align: left;
+	margin-bottom: 20px;
+	padding-left: 40px;
+	position: relative;
+}
+
+.pricing-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: pointer;
+}
+
+.pricing-list ul li:before {
+	font-family: 'FontAwesome';
+	content: "\f00c";
+	font-size: 16px;
+	color: #25945C;
+	padding-top: 3px;
+	position: absolute;
+	left: 16px;
+	transition: .5s;
+}
+
+.pricing-list .off:before {
+	content: "\f00d";
+	color: red;
+}
+
+.pricing-list li:hover {
+	padding-left: 10px;
+}
+
+.pricing-list ul li:hover:before {
+	padding-left: 10px;
+}
+
+h3.pricing-cound {
+	text-transform: none;
+	margin-bottom: 20px;
+}
+
+a.boxed-btn {
+	text-decoration: none;
+	border: 1px solid #25945C;
+	padding: 6px 15px;
+	color: #333;
+	border-radius: 50px;
+	transition: .3s;
+}
+
+a.boxed-btn:hover {
+	background-color: #25945C;
+	color: #fff;
+}
+
+.single-pricing-box:hover i {
+	color: #25945C;
+}
+
+.pricing-icon i {
+	transition: 0.5s;
+}
+
+.pricing-list li {
+	line-height: 1.8;
+	font-size: 18px;
+	transition: .5s;
+
+}
+
+.pricing-list li:hover {
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+
+@media only screen and (min-width: 992px) {}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media (max-width: 767px) {}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
